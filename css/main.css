@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -82,4 +83,10 @@ footer {
 
 footer p {
     color: #fff;
+}
+
+main {
+    display: block;
+    margin: 5em 0;
+    min-height: calc(100vh - 236.27px);
 }
