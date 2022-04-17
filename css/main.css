@@ -69,3 +69,12 @@ nav {
 .nav-ul a:hover {
     background-color: #8C4608;
 }
+
+footer {
+    background-color: #D9A048;
+    padding: 1.5em 0;
+}
+
+footer p {
+    color: #fff;
+}
