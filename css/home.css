@@ -1,0 +1,108 @@
+.home-hero {
+    border-radius: 2em 2em 0 0;
+    border-bottom: solid #D9A048 1em;
+    margin-top: 3em;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    padding-top: 35%;
+    width: 100%;
+}
+
+.home-hero video {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.home-hero-headline {
+    color: #8C4608;
+    font-size: 4.5em;
+    text-align: center;
+    margin: 0.5em 0;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.home-keypoins {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+.home-keypoins img {
+    display: block;
+    border: solid #D9A048 0.5em;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 50%;
+}
+
+.home-keypoins h2 {
+    color: #D9A048;
+    text-align: center;
+    width: 100%;
+}
+
+.home-description {
+    margin: 0 auto;
+    max-width: 620px;
+    text-align: center;
+}
+
+.home-subheader {
+    color: #8C4608;
+    font-size: 4em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.home-phone {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 80%;
+}
+
+.home-download-link {
+    display: flex;
+    color: #707070;
+    font-weight: bold;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2em;
+    transition: color 0.5s ease-in-out;
+}
+
+.home-download-link:hover {
+    color: #8C4608;
+}
+
+.home-download-link img {
+    display: inline-block;
+    margin: 0 2em;
+    width: 5em;
+}
+
+.home-cta {
+    display: block;
+    background-color: #D9A048;
+    border-radius: 2em;
+    color: #fff;
+    margin: 5em auto 0;
+    max-width: 350px;
+    padding: 2em 3em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease-in-out;
+    width: 100%;
+}
+
+.home-cta:hover {
+    background-color: #8C4608;
+}
