@@ -49,6 +49,8 @@
 	 color: currentColor;
 	 background: transparent;
 	 border-radius: var(--size-radius);
+   border-color: #D9A048;
+   outline: unset;
 }
 
 .price__field{
@@ -61,8 +63,13 @@
 	 color: currentColor;
 	 background: transparent;
 	 border-radius: var(--size-radius);
+   border-color: #D9A048;
+   outline: unset;
 }
 
+label span {
+  color: #939393;
+}
 
  .from__field:focus + .from__label, .from__field:not(:placeholder-shown) + .from__label {
 	 transform: translate(0.25rem, -65%) scale(0.8);
@@ -91,7 +98,6 @@ fieldset {
   margin-top: -10px;
   align-items: flex-start;
   min-width: 400px;
- 
 }
 
 .checkbox-container label {
@@ -142,6 +148,7 @@ fieldset {
 }
 .checkbox-container input[type="radio"]:before {
   border-radius: 100vh;
+  border-color: #D9A048;
 }
 .checkbox-container input[type="radio"]:after {
   width: 16px;
@@ -155,6 +162,7 @@ fieldset {
 }
 .checkbox-container input[type="checkbox"]:before {
   border-radius: 4px;
+  border-color: #D9A048;
 }
 .checkbox-container input[type="checkbox"]:after {
   width: 9.6px;
@@ -162,7 +170,7 @@ fieldset {
   border-radius: 0;
   transform: translate(-50%, -85%) scale(0) rotate(45deg);
   background-color: transparent;
-  box-shadow: 4px 4px 0px 0px #12CBC4;
+  box-shadow: 4px 4px 0px 0px #D9A048;
 }
 .checkbox-container input[type="checkbox"]:checked:after {
   -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
@@ -207,10 +215,10 @@ fieldset {
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
-  vertical-align: baseline;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-transform: uppercase;
 }
 
 .create-ride:hover,
