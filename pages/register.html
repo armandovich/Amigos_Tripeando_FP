@@ -8,7 +8,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="../css/main.css">    
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <script type="text/javascript">
+        function abc()
+        {
+            
+            if (document.form1.fname.value.length<3) 
+            {
+                 alert('Please Enter Your Name');
+                return false;
+            }
+            if (document.form1.lname.value.length<3) 
+            {
+                 alert('Please Enter Your Last Name');
+                return false;
+            }
+            var p1,p2;
+            p1=document.form1.pass.value
+            p2=document.form1.cpass.value
+            if(p1!=p2)
+            {
+                alert("Passwords doesn't match");
+                return false
+            }
+            if (document.form1.add.value.length<5) 
+            {
+                 alert('Please Enter Your Address');
+                return false;
+            }
+            if(document.form1.eid.value.length<1||document.form1.eid.value.indexOf("@")<3||document.form1.eid.value.indexOf(".")<4)
+            {
+                alert("please Enter a Valid Email Address");
+                return false;
+            }
+            if(document.form1.gender[0].checked==false&&document.form1.gender[1].checked==false)
+            {
+                alert("Choose gender");
+                return false;
+            }
+        }
+        function isNumberKey(evt)
+               {
+                  var charCode = (evt.which) ? evt.which : evt.keyCode;
+                  if (charCode != 46 && charCode > 31 
+                    && (charCode < 48 || charCode > 57))
+                     return false;
+        
+                  return true;
+               }
+        </script>
+
 </head>
 <body>
     <div class="main-container">
