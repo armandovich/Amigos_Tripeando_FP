@@ -80,7 +80,7 @@
         <main class="container wrapper">
             <h1 class="page-title">find Trip</h1>
 
-            <form class="search-form" action="action_page.php" method="post">
+            <form class="search-form">
                 <div class="imgcontainer">
                   <h3  alt="Label" name="where" id="whereLbl">
                     <label for="where"><b>Where is your next adventure?</b></label>
@@ -98,7 +98,7 @@
                     <span>
                         <input type="date" id="tDate" name="date">
                      </span>
-                     
+
                     <label id="lPassenger" for="decrease"><b>Passengers: </b></label>
                     <span>
                     <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><b>-</b></div>
@@ -109,7 +109,8 @@
   
                 </div>
 
-                  <button type="submit"><b>Find A Trip</b></button>
+                <button type="button" onclick="window.location='result.html'"><b>Find A Trip</b></button>
+               
                  
                 </div>
               </form>
