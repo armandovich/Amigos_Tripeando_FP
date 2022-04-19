@@ -129,24 +129,51 @@ main {
     margin-bottom: 4em;
 }
 
-.hamburger-icon {
-    background-color: #D9A048;
+.hamburger-icon,
+.close-icon {
     border-radius: 50%;
     height: 3em;
     overflow: hidden;
-    margin-right: 2em;
-    padding-top: 0.7em;
     width: 3em;
     cursor: pointer;
 }
 
-.hamburger-icon span {
+.hamburger-icon {
+    background-color: #D9A048;
+    padding-top: 0.7em;
+    margin-right: 2em;
+}
+
+.close-icon {
     background-color: #fff;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close-icon span,
+.hamburger-icon span {
     border-radius: 1em;
     display: block;
-    margin: 0.2em auto;
     width: 60%;
     height: 0.3em;
+}
+
+.hamburger-icon span {
+    background-color: #fff;
+    margin: 0.2em auto;
+}
+
+.close-icon span {
+    background-color: #D9A048;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-icon span:first-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .mobile {

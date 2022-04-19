@@ -2,6 +2,7 @@ var isMenuOpen = false;
 var nav = document.querySelector('nav');
 
 document.querySelector('.hamburger-icon').addEventListener('click', toggleMenu);
+document.querySelector('.close-icon').addEventListener('click', toggleMenu);
 
 function toggleMenu() {
     isMenuOpen = !isMenuOpen;
