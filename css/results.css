@@ -28,8 +28,7 @@
 }
   
   #myUL {
-    /* Remo
-    ve default list styling */
+  
     padding: 0;
     list-style-type: none;
     left: 0;
