@@ -1,8 +1,13 @@
 form {
     border: 3px solid #f1f1f1;
-    
+    margin: 0 auto 5em;
+    max-width: 600px;
+    width: 100%;
   }
   
+  .search-form label {
+    color: #8C4608;
+  }
   /* Full-width inputs */
   input[type=text] {
     width: 100%;
@@ -45,14 +50,16 @@ form {
   }
 
   #tDate{
-    display: block;
+    display: inline-block;
     overflow: hidden;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 3px solid #D9A048;
     box-sizing: border-box;
-    border-radius: .2em;  }
+    border-radius: .2em; 
+  
+  }
 
   
   /* Set a style for all buttons */
@@ -127,7 +134,6 @@ form {
       margin: 0;
   }
   
-  
   /* Add padding to containers */
   .container {
     padding: 16px;
@@ -137,12 +143,22 @@ form {
     float: right;
     padding-top: 16px;
   }
+
+.search-passengers {
+  margin: 0.5em 0;
+}
   
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.to {
-      display: block;
-      float: none;
-    }
-    
+.value-button {
+  border: unset;
+  background-color: #D9A048;
+  color: #fff;
+  height: 2.5em;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.to {
+    display: block;
+    float: none;
   }
+}

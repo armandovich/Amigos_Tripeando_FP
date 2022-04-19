@@ -1,0 +1,29 @@
+.login-form {
+    border: solid 2px #D9A048;
+    border-radius: 1em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 3em 0.2em rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    padding: 2em 1em;
+    width: 80%;
+}
+
+.login-warning {
+    color: #8C4608;
+    text-align: center;
+    padding-bottom: 0.5em;
+    line-height: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.form-reset {
+    color: #D9A048;
+}
+
+.form-reset:hover {
+    color: #8C4608;
+}

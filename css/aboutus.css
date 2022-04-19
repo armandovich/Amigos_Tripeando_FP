@@ -1,0 +1,40 @@
+.about-us-info {
+    vertical-align: top;
+}
+
+.about-us-info p {
+    max-width: 600px;
+}
+
+.about-us-info img {
+    border-radius: 0.4em;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.aboutus-dev {
+    display: flex;
+    margin: 3em 0;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    width: 100%;
+}
+
+.aboutus-dev li {
+    flex: 1;
+}
+
+.aboutus-dev img {
+    background-color: #8C4608;
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.about-hero {
+    border-radius: 0.4em;
+    width: 100%;
+    margin-bottom: 2em;
+}
