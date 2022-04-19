@@ -10,6 +10,17 @@ const country = document.querySelector('#co');
 const date = document.querySelector('#birthday');
 
 const submitBtn = document.getElementById("submit");
+const clearBtn = document.getElementById("clear");
+
+clearBtn.addEventListener('click', function() {
+  fname.value = "";
+  lname.value = "";
+  phone.value = "";
+  address.value = "";
+  email.value = "";
+  pass.value = "";
+  cpass.value = "";
+});
 
 submitBtn.addEventListener('click', function(e) {
   e.preventDefault();

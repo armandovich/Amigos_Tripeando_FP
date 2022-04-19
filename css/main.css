@@ -8,6 +8,14 @@ body {
     overflow-x: hidden;
 }
 
+body.unloged-view .login-content {
+    display: none;
+}
+
+body.login-view .unloged-content {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }

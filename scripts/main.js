@@ -8,3 +8,9 @@ function toggleMenu() {
     isMenuOpen = !isMenuOpen;
     nav.className = isMenuOpen ? "active" : "";
 }
+
+const storageLoged = localStorage.getItem('isUserLoged');
+const isUserLoged = storageLoged !== null && storageLoged;
+const userData =  JSON.parse(localStorage.getItem("user"));
+
+document.querySelector("body").className = isUserLoged ? "login-view" : "unloged-view";
