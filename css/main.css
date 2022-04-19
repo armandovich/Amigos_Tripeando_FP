@@ -186,6 +186,32 @@ main {
     display: none !important;
 }
 
+.form-input {
+    border: solid 2px #D9A048;
+    border-radius: 0.5em;
+    outline: unset;
+    width: 100%;
+    padding: 0.8em 0.5em;
+    margin-bottom: 1em;
+}
+
+.form-buttom {
+    background-color: #D9A048;
+    border-radius: 0.5em;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.8em 1.5em;
+    font-weight: bold;
+    border: unset;
+    outline: unset;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.form-buttom:hover {
+    background-color: #8C4608;
+}
+
 @media (max-width: 800px) {
     .mobile {
         display: inline-block !important;
