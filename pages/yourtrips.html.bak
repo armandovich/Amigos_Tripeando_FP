@@ -56,25 +56,25 @@
 			<div class="ride">
 			<h2>Ride</h2>
 			<p>From: Lambton College <br>To: CN Tower <br>Conditions:<br>No Pets<br>No Smoking</p>
-			<button class="edit-ride" role="button">Edit Ride</button>
+			<button class="view-ride" role="button">Edit Ride</button>
 			</div>
 			
 			<div class="trip">
 			<h2>Trip</h2>
 			<p>From: Niagra Falls <br>To: North York<br>Conditions:<br>No Eating</p>
-			<button class="edit-trip" role="button">Edit Trip</button>
+			<button class="view-trip" role="button">Edit Trip</button>
 			</div>
 		
 			<div class="trip">
 			<h2>Trip</h2>
 			<p>From: Vancouver <br>To: Montral<br>Conditions:<br>No Eating</p>
-			<button class="edit-trip" role="button">Edit Trip</button>
+			<button class="view-trip" role="button">Edit Trip</button>
 			</div>
 			
 			<div class="ride">
 			<h2>Ride</h2>
 			<p>From: Ottawa <br>To: Moraine Lake <br>Conditions:<br>No Eating<br>No Smoking</p>
-			<button class="edit-ride" role="button">Edit Ride</button>
+			<button class="view-ride" role="button">Edit Ride</button>
 			</div>
 			
         </main>
