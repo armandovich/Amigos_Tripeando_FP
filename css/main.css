@@ -13,7 +13,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     color: #8C4608;
     text-transform: uppercase;
 }
