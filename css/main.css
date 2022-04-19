@@ -195,20 +195,31 @@ main {
     margin-bottom: 1em;
 }
 
-.form-buttom {
-    background-color: #D9A048;
+.form-buttom,
+.form-clear {
     border-radius: 0.5em;
-    color: #fff;
     text-transform: uppercase;
     padding: 0.8em 1.5em;
     font-weight: bold;
     border: unset;
     outline: unset;
     cursor: pointer;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.form-buttom:hover {
+.form-buttom {
+    background-color: #D9A048;
+    color: #fff;
+}
+
+.form-clear {
+    background-color: transparent;
+    color: #8C4608;
+}
+
+.form-buttom:hover,
+.form-clear:hover {
+    color: #fff;
     background-color: #8C4608;
 }
 
