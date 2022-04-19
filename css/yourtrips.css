@@ -15,12 +15,12 @@
 
 .ride:hover {
   padding-left: 0.5rem;
-  border-left: 0.5rem solid green;
+  border-left: 0.5rem solid #8C4608;
 }
 
 .trip:hover {
   padding-left: 0.5rem;
-  border-left: 0.5rem solid blue;
+  border-left: 0.5rem solid #D9A048;
 }
 
 .ride > :first-child, .trip>:first-child{

@@ -14,8 +14,20 @@
 <body>
     <div class="main-container">
         <header class="wrapper">
-            <img class="logo" src="../images/logo.png" alt="Logo">
             <ul class="clean-ul header-ul">
+                <li class="mobile">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <img class="logo" src="../images/logo.png" alt="Logo">
+                </li>
+            </ul>
+
+            <ul class="clean-ul header-ul desktop">
                 <li class="unloged-content">
                     <a href="login.html">Login</a>
                 </li>
@@ -48,10 +60,26 @@
                 <li>
                     <a href="contactus.html">Contact Us</a>
                 </li>
+                <li class="unloged-content mobile">
+                    <a href="login.html">Login</a>
+                </li>
+                <li class="unloged-content mobile">
+                    <a href="register.html">Register</a>
+                </li>
+                <li class="login-content mobile">
+                    <a href="">Logout</a>
+                </li>
             </ul>
+
+            <div class="close-icon mobile">
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
         <main class="container wrapper">
+                <h1 class="page-title">Create Ride</h1>
+
 			    <label class="from">
 				  <input class="from__field" type="text" placeholder=" " />
 				  <span class="from__label">From</span>

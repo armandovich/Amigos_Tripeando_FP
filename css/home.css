@@ -31,6 +31,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 5em;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .home-keypoins img {
@@ -39,6 +41,7 @@
     border-radius: 50%;
     margin: 0 auto;
     overflow: hidden;
+    min-width: 200px;
     width: 50%;
 }
 
@@ -46,6 +49,7 @@
     color: #D9A048;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 5em;
     width: 100%;
 }
 
@@ -77,6 +81,7 @@
     align-items: center;
     margin-top: 2em;
     transition: color 0.5s ease-in-out;
+    flex-wrap: wrap;
 }
 
 .home-download-link:hover {
@@ -106,4 +111,23 @@
 
 .home-cta:hover {
     background-color: #8C4608;
+}
+
+@media (max-width: 800px) {
+    .home-hero-headline {
+        font-size: 3em;
+    }
+
+    .home-subheader {
+        font-size: 2em;
+    }
+
+    .home-keypoins li {
+        display: block;
+        width: 100%;
+    }
+
+    .home-hero {
+        padding-top: 80%;
+    }
 }

@@ -14,16 +14,17 @@ a {
 
 h1,
 h2 {
+    color: #8C4608;
     text-transform: uppercase;
 }
 
 h1,
 p {
     margin: 0;
-    color: #707070;
 }
 
 p {
+    color: #707070;
     line-height: 2;
 }
 
@@ -32,6 +33,11 @@ p {
     max-width: 1440px;
     padding: 0 0.5em;
     width: 100%;
+}
+
+.page-title {
+    margin: 1em 0;
+    font-size: 3em;
 }
 
 .clean-ul li {
@@ -129,24 +135,51 @@ main {
     margin-bottom: 4em;
 }
 
-.hamburger-icon {
-    background-color: #D9A048;
+.hamburger-icon,
+.close-icon {
     border-radius: 50%;
     height: 3em;
     overflow: hidden;
-    margin-right: 2em;
-    padding-top: 0.7em;
     width: 3em;
     cursor: pointer;
 }
 
-.hamburger-icon span {
+.hamburger-icon {
+    background-color: #D9A048;
+    padding-top: 0.7em;
+    margin-right: 2em;
+}
+
+.close-icon {
     background-color: #fff;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close-icon span,
+.hamburger-icon span {
     border-radius: 1em;
     display: block;
-    margin: 0.2em auto;
     width: 60%;
     height: 0.3em;
+}
+
+.hamburger-icon span {
+    background-color: #fff;
+    margin: 0.2em auto;
+}
+
+.close-icon span {
+    background-color: #D9A048;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-icon span:first-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .mobile {
@@ -164,8 +197,8 @@ main {
 
     nav {
         position: fixed;
-        top: 100%;
-        left: 0;
+        top: 0;
+        left: -100%;
         width: 100%;
         height: 100vh;
         transition: left 0.5s ease-in-out;
@@ -179,5 +212,17 @@ main {
     .nav-ul li {
        display: block;
        width: 100%;
+    }
+
+    main {
+        min-height: calc(100vh - 185px);
+    }
+
+    .col-half {
+        width: 100%;
+    }
+    
+    footer p {
+        text-align: center;
     }
 }
