@@ -217,4 +217,12 @@ main {
     main {
         min-height: calc(100vh - 185px);
     }
+
+    .col-half {
+        width: 100%;
+    }
+    
+    footer p {
+        text-align: center;
+    }
 }
