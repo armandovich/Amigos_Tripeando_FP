@@ -40,6 +40,7 @@ p {
 
 header.wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between; 
     padding-bottom: 1em;
     padding-top: 1em;   
@@ -53,6 +54,7 @@ header.wrapper {
     padding-left: 0;
     align-items: center;
     display: flex;
+    margin: 0;
     flex-direction: row;
 }
 
@@ -127,7 +129,39 @@ main {
     margin-bottom: 4em;
 }
 
+.hamburger-icon {
+    background-color: #D9A048;
+    border-radius: 50%;
+    height: 3em;
+    overflow: hidden;
+    margin-right: 2em;
+    padding-top: 0.7em;
+    width: 3em;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    background-color: #fff;
+    border-radius: 1em;
+    display: block;
+    margin: 0.2em auto;
+    width: 60%;
+    height: 0.3em;
+}
+
+.mobile {
+    display: none !important;
+}
+
 @media (max-width: 800px) {
+    .mobile {
+        display: inline-block !important;
+    }
+
+    .desktop {
+        display: none;
+    }
+
     nav {
         position: fixed;
         top: 100%;
