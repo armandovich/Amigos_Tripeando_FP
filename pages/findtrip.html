@@ -80,7 +80,7 @@
         <main class="container wrapper">
             <h1 class="page-title">find Trip</h1>
 
-            <form action="action_page.php" method="post">
+            <form class="search-form" action="action_page.php" method="post">
                 <div class="imgcontainer">
                   <h3  alt="Label" name="where" id="whereLbl">
                     <label for="where"><b>Where is your next adventure?</b></label>
@@ -88,23 +88,23 @@
                 </div>
               
                 <div class="container">
-                  <label for="uname" id="lInput"><b>From</b></label>
+                  <label for="uname" id="fromInput"><b>From</b></label>
                   <input type="text" placeholder="Enter From" name="from" required>
               
-                  <label for="psw" id="lInput"><b>To</b></label>
+                  <label for="psw" id="toInput"><b>To</b></label>
                   <input type="text" placeholder="Enter To" name="to" required>
                   <div class="dateContainer">
-                    <label id="lDate" for="date"><b>Date: </b></label>
-                    <span>
-                        <input type="date" id="tDate" name="date">
-                        <form>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-                          </form>
-                    </span>  
-                </div>
-                  <button type="submit"><b>Find A Trip</b></button>
+                    <label id="dateInput" for="date"><b>Date: </b></label><br>
+                    <input type="date" id="tDate" name="date">
+                    </div>
+                    <label for="passengers" id="passengerInput"><b>Passengers</b></label><br>
+                    <div class="search-passengers">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    </div>  
+                    <br>
+                  <button class="form-buttom " type="submit">Find A Trip</button>
                 </div>
               </form>
         </main>
