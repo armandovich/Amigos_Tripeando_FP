@@ -95,12 +95,15 @@
                     <label id="lDate" for="date"><b>Date: </b></label>
                     <span>
                         <input type="date" id="tDate" name="date">
-                        <form>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-                          </form>
-                    </span>  
+                     </span>
+                    <label id="lPassenger" for="decrease"><b>Passengers: </b></label>
+                    <span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><b>-</b></div>
+
+                    <input type="number" id="number" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><b>+</b></div>
+                    </span>
+  
                 </div>
 
                   <button type="submit"><b>Find A Trip</b></button>
@@ -122,4 +125,6 @@
     </div>
 </body>
 <script src="../scripts/main.js"></script>
+<script src="../scripts/pickNum.js"></script>
+
 </html>
