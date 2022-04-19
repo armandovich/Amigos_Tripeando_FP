@@ -8,6 +8,8 @@ const gender = document.querySelector('.gender');
 const country = document.querySelector('.co');
 const date = document.querySelector('.birthday');
 
+const submitBtn = document.getElementById("submit");
+
 
 submitBtn.addEventListener('click', () => {
     localStorage.setItem('First Name', fname.value);
