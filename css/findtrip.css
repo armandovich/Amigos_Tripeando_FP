@@ -24,6 +24,7 @@ form {
       border-color: #D9A048;
       display: flex;
      justify-content: center;
+     align-items: center;
   }
 
   #lInput{
@@ -34,7 +35,7 @@ form {
   #lDate{
     float: left;
     color: #D9A048;
-    margin-right: 1em;
+    margin-right: .5em;
     align-self: center ;
 
   }
@@ -44,7 +45,8 @@ form {
   #lPassenger{
     float: right;
     color: #D9A048;
-    margin-left: 1em;
+    margin-right: .8em;
+    margin-left: .5em;
     align-self: center ;
 
   }
@@ -52,7 +54,7 @@ form {
   #tDate{
     display: inline-block;
     overflow: hidden;
-    padding: 12px 20px;
+    padding: 8px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 3px solid #D9A048;
@@ -95,9 +97,8 @@ form {
   
   .value-button {
     display: inline-block;
-    margin: 0px;
     width: 40px;
-    border-radius: 5em;
+    border-radius: 12em;
     height: 40px;
     text-align: center;
     vertical-align: middle;
@@ -122,8 +123,6 @@ form {
     text-align: center;
     border: none;
     background-color: transparent;
-
-    margin: 0px;
     width: 40px;
     height: 40px;
   }
