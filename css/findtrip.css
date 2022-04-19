@@ -21,27 +21,32 @@ form {
   }
 
   .dateContainer{
+<<<<<<< HEAD
       border-color: #D9A048;
       display: flex;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
+=======
+    border-color: #D9A048;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 9025eb84b0a565b53b729d600e10d3aabf40bfdd
   }
 
-  #lInput{
+  #lInput {
     float: left;
     color: #D9A048;
 
   }
+
   #lDate{
     float: left;
     color: #D9A048;
     margin-right: .5em;
     align-self: center ;
-
   }
-
- 
  
   #lPassenger{
     float: right;
@@ -52,7 +57,7 @@ form {
 
   }
 
-  #tDate{
+  #tDate {
     display: inline-block;
     overflow: hidden;
     padding: 8px 20px;
@@ -134,7 +139,7 @@ form {
   }
   
   /* Add padding to containers */
-  .container {
+  .form-container {
     padding: 16px;
   }
   
@@ -152,6 +157,18 @@ form {
   background-color: #D9A048;
   color: #fff;
   height: 2.5em;
+}
+
+@media (max-width: 800px) {
+  .dateContainer {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  #lPassenger, #lDate {
+    display: block;
+    width: 100%;
+  }
 }
 
 /* Change styles for span and cancel button on extra small screens */
