@@ -9,11 +9,11 @@ body {
 }
 
 body.unloged-view .login-content {
-    display: none;
+    display: none !important;
 }
 
 body.login-view .unloged-content {
-    display: none;
+    display: none !important;
 }
 
 a {
