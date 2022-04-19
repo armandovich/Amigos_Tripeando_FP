@@ -77,7 +77,7 @@
         <main class="container wrapper">
             <h1 class="page-title">Register</h1>
 
-            <form id="register-form" name="register-form" method="post" action="" onsubmit="return abc()">
+            <form id="register-form" name="register-form" method="post" action="">
                 <table class="register-table" width="100%" cellpadding="1" cellspacing="0">
                     <tr>
                       <td width="22%"></td>
@@ -108,7 +108,7 @@
                     <tr>
                       <td>Phone Number</td>
                       <td><label>
-                        <input type="text" name="phn" id="phn" onkeypress="return isNumberKey(event)" />
+                        <input type="text" name="phn" id="phn" />
                       </label></td>
                     </tr>
                     <tr>
@@ -153,7 +153,7 @@
                     <tr>
                       <td>Gender</td>
                       <td><label>
-                        <input type="radio" name="gender" id="m" value="male" />
+                        <input type="radio" name="gender" id="m" value="male" checked/>
                       Male</label>
                           <label><input type="radio" name="gender" id="f" value="female" />
                       Female</label>
@@ -163,7 +163,7 @@
                     </tr>
                     <tr>
                       <td>Country</td>
-                      <td><select name="co" selected="usa">
+                      <td><select name="co" id="co" selected="usa">
                         <option>Canada</option>
                         <option>USA</option>
                         <option>India</option>
@@ -204,52 +204,4 @@
 </body>
 <script src="../scripts/main.js"></script>
 <script src="../scripts/register.js"></script>
-<script type="text/javascript">
-  function abc()
-{
-	
-	if (document.register-form.fname.value.length<3) 
-	{
- 		alert('Please Enter Your Name');
-		return false;
-	}
-	if (document.register-form.lname.value.length<3) 
-	{
- 		alert('Please Enter Your Last Name');
-		return false;
-	}
-	var p1,p2;
-	p1=document.register-form.pass.value
-	p2=document.register-form.cpass.value
-	if(p1!=p2)
-	{
-		alert("Passwords doesn't match");
-	    return false
-	}
-	if (document.register-form.add.value.length<5) 
-	{
- 		alert('Please Enter Your Address');
-		return false;
-	}
-	if(document.register-form.eid.value.length<1||document.register-form.eid.value.indexOf("@")<3||document.register-form.eid.value.indexOf(".")<4)
-	{
-		alert("please Enter a Valid Email Address");
-		return false;
-	}
-	if(document.register-form.gender[0].checked==false&&document.register-form.gender[1].checked==false)
-	{
-		alert("Choose gender");
-		return false;
-	}
-}
-function isNumberKey(evt)
-       {
-          var charCode = (evt.which) ? evt.which : evt.keyCode;
-          if (charCode != 46 && charCode > 31 
-            && (charCode < 48 || charCode > 57))
-             return false;
-
-          return true;
-       }
-  </script>
 </html>

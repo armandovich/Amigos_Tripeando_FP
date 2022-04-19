@@ -1,25 +1,54 @@
-const fname = document.querySelector('.fname');
-const lname = document.querySelector('.lname');
-const phone = document.querySelector('.phn');
-const address = document.querySelector('.add');
-const email = document.querySelector('.eid');
-const pass = document.querySelector('.pass');
-const gender = document.querySelector('.gender');
-const country = document.querySelector('.co');
-const date = document.querySelector('.birthday');
+const fname = document.querySelector('#fname');
+const lname = document.querySelector('#lname');
+const phone = document.querySelector('#phn');
+const address = document.querySelector('#add');
+const email = document.querySelector('#eid');
+const pass = document.querySelector('#pass');
+const cpass = document.querySelector('#cpass');
+const gender = document.querySelector('#m');
+const country = document.querySelector('#co');
+const date = document.querySelector('#birthday');
 
 const submitBtn = document.getElementById("submit");
 
+submitBtn.addEventListener('click', function(e) {
+  e.preventDefault();
 
-submitBtn.addEventListener('click', () => {
-    localStorage.setItem('First Name', fname.value);
-    localStorage.setItem('Last Name', fname.value);
-    localStorage.setItem('Phone Number', phone.value);
-    localStorage.setItem('Address', address.value);
-    localStorage.setItem('Email ID', email.value);
-    localStorage.setItem('Password', pass.value);
-    localStorage.setItem('Gender', gender.value);
-    localStorage.setItem('Country', country.value);
-    localStorage.setItem('Date', date.value);
-  });
+  if(fname.value == "") {
+    alert("First name can't be empty.");
+    return;
+  } else if(lname.value == "") {
+    alert("Last name can't be empty.");
+    return;
+  } else if(address.value == "") {
+    alert("Address can't be empty.");
+    return;
+  } else if(email.value == "") {
+    alert("Email can't be empty.");
+    return;
+  } else if(pass.value == "" || cpass.value == "") {
+    alert("Password can't be empty.");
+    return;
+  } else if (pass.value != cpass.value) {
+    alert("Password doesn't match.");
+    return;
+  }
+
+  var user = {
+    'name' : fname.value + ' ' + lname.value,
+    'phone' : phone.value,
+    'address' : address.value,
+    'email' : email.value,
+    'pass' : pass.value,
+    'gender' : gender ? "Make" : "Female",
+    'country' : country.value,
+    'date' : date.value
+  };
+
+  localStorage.setItem('user', JSON.stringify(user));
+  
+  alert("Thank you for registering.");
+
+  window.open("login.html", "_self")
+});
   
