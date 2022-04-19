@@ -1,0 +1,126 @@
+form {
+    border: 3px solid #f1f1f1;
+    
+  }
+  
+  /* Full-width inputs */
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #D9A048;
+    box-sizing: border-box;
+    border-radius: .2em;
+
+  }
+
+  .dateContainer{
+      border-color: #D9A048;
+  }
+
+  #lInput{
+    float: left;
+    color: #D9A048;
+
+  }
+  #lDate{
+    float: left;
+    color: #D9A048;
+
+  }
+
+  #tDate{
+    display: block;
+    overflow: hidden;
+    padding: 0px 4px 0px 6px;
+  }
+
+  
+  /* Set a style for all buttons */
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9A048;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  /* Center the avatar image inside this container */
+  #whereLbl {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    color: #8C4608;
+  }
+
+
+  
+  .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+ 
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  span.to {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.to {
+      display: block;
+      float: none;
+    }
+    
+  }
