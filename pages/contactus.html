@@ -82,14 +82,14 @@
             <form id="contact-form" class="conact-form" action="">
                 <input class="form-input" placeholder="name" id="name" type="text">
                 <input class="form-input" placeholder="email" id="email" type="email">
-                <textarea class="form-input" placeholder="How can we help you?" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="form-input" placeholder="How can we help you?" name="msg" id="msg" cols="30" rows="10"></textarea>
                 <div>
                     <input type="checkbox" id="human" name="human">
                     <label for="scales">I'm not a robot.</label>
                 </div>
                 <br>
-                <button class="form-buttom " type="submit" form="contact-form" value="Login">Submit</button>
-                <button class="form-clear">Clear</button>
+                <button class="form-buttom " type="submit" form="contact-form" value="Login" onclick="sendMSG()">Submit</button>
+                <button class="form-clear" onclick="clear()">Clear</button>
             </form>
         </main>
 
@@ -101,4 +101,40 @@
     </div>
 </body>
 <script src="../scripts/main.js"></script>
+<script>
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const msg = document.getElementById("msg");
+    const human = document.getElementById("human");
+
+    function clear() {
+        event.preventDefault();
+
+        name.value = "";
+        email.value = "";
+        msg.value = "";
+        human.checked = false;
+    }
+
+    function sendMSG() {
+        event.preventDefault();
+
+        if(name.value == "") {
+            alert("Name can't be empty");
+            return;
+        } else if(email.value == "") {
+            alert("Email can't be empty");
+            return;
+        } else if(msg.value == "") {
+            alert("Message can't be empty");
+            return;
+        } else if(!human.checked)  {
+            alert("You need to check the box.");
+            return;
+        } else {
+            clear();
+            alert("Thank you for reaching us.");
+        }
+    }
+</script>
 </html>
