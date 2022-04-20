@@ -1,6 +1,7 @@
 .register-table {
     color: #8C4608;
     font-weight: bold;
+    margin: 0 auto;
     text-transform: uppercase;
     margin-bottom: 5em;
 }
@@ -18,4 +19,11 @@
     border: solid 2px #D9A048;
     padding: 0.2em 0.5em;
     outline: none;
+}
+
+#register-form {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 3em;
 }
