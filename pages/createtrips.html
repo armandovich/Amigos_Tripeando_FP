@@ -80,18 +80,18 @@
         <main class="container wrapper">
                 <h1 class="page-title">Create Ride</h1>
 
-			    <label class="from">
-				  <input class="from__field" type="text" placeholder=" " />
-				  <span class="from__label">From</span>
-				</label>
-				<label class="to">
-				  <input class="to__field" type="text" placeholder=" " />
-				  <span class="to__label">To</span>
-				</label>
-				<label class="price">
-				  <input class="price__field" type="number" placeholder=" " />
-				  <span class="price__label">Price</span>
-				</label>
+                <div class="map-responsive"> 
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9809847328856!2d-79.33830588427415!3d43.773253552676856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto%20At%20Cestar%20College%20Of%20Business%2C%20Health%20and%20Technology!5e0!3m2!1sen!2slb!4v1650255486087!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>	
+
+                <br>
+                <input class="form-input" type="text" placeholder="From" />
+                <br>
+                <input class="form-input" type="text" placeholder="To" />
+                <br>
+                <input class="form-input" type="number" placeholder="Price" />
+                <br>
+                <input class="form-input" type="number" placeholder="Seats" />
 				
 				<div class="checkbox-container">
 				<h2 class="choose-options">Choose any of these options:</h2>
@@ -110,12 +110,9 @@
 					</label>
 				  </fieldset>
 				</div>
-					
-				<div class="map-responsive"> 
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9809847328856!2d-79.33830588427415!3d43.773253552676856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto%20At%20Cestar%20College%20Of%20Business%2C%20Health%20and%20Technology!5e0!3m2!1sen!2slb!4v1650255486087!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>	
 
-				<button class="create-ride" role="button">Create Ride</button>
+				<button class="create-ride" role="button" onclick="createRide()">Create Ride</button>
+                <br>
         </main>
 
         <footer>
@@ -126,4 +123,9 @@
     </div>
 </body>
 <script src="../scripts/main.js"></script>
+<script>
+    function createRide() {
+        alert("Ride Created");
+    }
+</script>
 </html>

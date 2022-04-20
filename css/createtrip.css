@@ -228,7 +228,7 @@ fieldset {
 
 .map-responsive{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:30%;
     position:relative;
     height:0;
 }
@@ -239,4 +239,10 @@ fieldset {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+@media (max-width: 800px) {
+  .map-responsive{
+    padding-bottom:80%;
+}
 }
